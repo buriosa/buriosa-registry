@@ -1,0 +1,64 @@
+/* ─────────────────────────────────
+   Glass Effects (monet-style)
+────────────────────────────────── */
+@utility glass-1 {
+  @apply border border-border bg-linear-to-b from-card/80 to-card/40;
+}
+
+@utility glass-2 {
+  @apply border border-border bg-linear-to-b from-card to-card/80;
+}
+
+@utility glass-3 {
+  @apply border border-border bg-linear-to-b from-card/30 to-card/20;
+}
+
+@utility glass-4 {
+  @apply border border-border bg-linear-to-b from-card/60 to-card/20;
+}
+
+@utility glass-5 {
+  @apply border border-border bg-linear-to-b from-card to-card/20;
+}
+
+/* ─────────────────────────────────
+   Fade Masks
+────────────────────────────────── */
+@utility fade-x {
+  mask-image: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
+}
+
+@utility fade-y {
+  mask-image: linear-gradient(to top, transparent 0%, black 25%, black 75%, transparent 100%);
+}
+
+@utility fade-top {
+  mask-image: linear-gradient(to bottom, transparent 0%, black 35%);
+}
+
+@utility fade-bottom {
+  mask-image: linear-gradient(to top, transparent 0%, black 35%);
+}
+
+/* ─────────────────────────────────
+   Line Utilities
+────────────────────────────────── */
+@utility line-y {
+  border-width: 0 var(--line-width);
+}
+
+@utility line-x {
+  border-width: var(--line-width) 0;
+}
+
+@utility line-b {
+  border-width: 0 0 var(--line-width);
+}
+
+@utility line-t {
+  border-width: var(--line-width) 0 0;
+}
+
+@utility line-dashed {
+  @apply border-dashed;
+}

@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-and-validate:
+    runs-on: windows-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Python
+      - name: Setup Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install Python deps
+        shell: pwsh
+        run: |
+          py -3.13 -m pip install --upgrade pip
+          if (Test-Path requirements.txt) {
+            py -3.13 -m pip install -r requirements.txt
+          } else {
+            py -3.13 -m pip install pyyaml
+          }
+          py -3.13 -c "import yaml; print('pyyaml ok')"
+
+      # Node
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # pnpm (먼저 설치!)
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "9"
+          run_install: false
+
+      - name: Verify pnpm
+        shell: pwsh
+        run: |
+          pnpm -v
+          node -v
+
+      # Install deps
+      - name: Install root deps
+        shell: pwsh
+        run: |
+          pnpm install
+
+      - name: Install web deps
+        shell: pwsh
+        run: |
+          pnpm -C apps/web install
+
+      # Factory (validate -> build -> sync)
+      - name: Factory
+        shell: pwsh
+        run: |
+          pnpm factory
+
+      # Web build
+      - name: Web build
+        shell: pwsh
+        run: |
+          pnpm -C apps/web build
+
+      # Debug artifact existence
+      - name: List registry artifacts
+        shell: pwsh
+        run: |
+          if (Test-Path public/registry/index.json) { echo "OK: public/registry/index.json" } else { echo "MISSING: public/registry/index.json" }
+          if (Test-Path apps/web/public/registry/index.json) { echo "OK: apps/web/public/registry/index.json" } else { echo "MISSING: apps/web/public/registry/index.json" }
