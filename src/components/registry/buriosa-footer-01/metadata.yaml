@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: buriosa-footer-01
+category: footer
+
+images:
+  preview: registry/preview/buriosa-footer-01.png
+
+title: "Buriosa Footer"
+
+description:
+  short: "4열 레이아웃 푸터 - 로고, 링크 그룹, 소셜 아이콘, 뉴스레터 구독 폼"
+
+tags:
+  functional:
+    - newsletter
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
+
+freeformKeywords:
+  - footer
+  - navigation
+  - social links
+  - newsletter
+  - copyright
+  - sitemap
+
+fontFamily:
+  - system-ui
+
+createdAt: "2025-01-21T00:00:00Z"
+status: stable
+language: ko
+draft: false

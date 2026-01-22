@@ -1,30 +1,30 @@
 {
-  "name": "@buriosa/web",
+  "name": "buriosa-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NEXT_DISABLE_TURBOPACK=1 next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.1.4",
+    "framer-motion": "^12.18.3",
+    "lucide-react": "^0.515.0",
+    "next": "^15.3.4",
     "next-themes": "^0.4.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^25.0.9",
-    "@types/react": "^19.2.8",
-    "@types/react-dom": "^19.2.3",
-    "autoprefixer": "^10.4.23",
-    "cross-env": "^10.1.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.4",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3"
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.4",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
   }
 }

@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: buriosa-pricing-01
+category: pricing
+
+images:
+  preview: registry/preview/buriosa-pricing-01.png
+
+title: "Buriosa 3-Tier Pricing"
+
+description:
+  short: "모던한 3단계 가격표 (Free, Pro, Enterprise) - 다크 테마 및 호버 효과"
+
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - dark-theme
+    - modern
+    - glow
+    - gradient
+    - sans-serif
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
+
+freeformKeywords:
+  - pricing table
+  - subscription
+  - tier
+  - popular badge
+  - call to action
+
+fontFamily:
+  - system-ui
+
+createdAt: "2025-01-21T00:00:00Z"
+status: stable
+language: ko
+draft: false

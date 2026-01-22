@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: buriosa-testimonial-01
+category: testimonial
+
+images:
+  preview: registry/preview/buriosa-testimonial-01.png
+
+title: "Buriosa Testimonial Cards"
+
+description:
+  short: "3열 그리드 후기 카드 - 아바타, 이름, 직함, 인용문, 별점 포함"
+
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - sans-serif
+  layout:
+    - three-column
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
+
+freeformKeywords:
+  - testimonial
+  - review
+  - social proof
+  - customer feedback
+  - rating
+  - avatar
+  - quote
+
+fontFamily:
+  - system-ui
+
+createdAt: "2025-01-21T00:00:00Z"
+status: stable
+language: ko
+draft: false

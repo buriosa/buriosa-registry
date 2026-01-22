@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: buriosa-faq-01
+category: faq
+
+images:
+  preview: registry/preview/buriosa-faq-01.png
+
+title: "Buriosa FAQ Accordion"
+
+description:
+  short: "아코디언 형태의 FAQ 섹션 - 클릭 시 열림/닫힘 애니메이션, +/- 아이콘"
+
+tags:
+  functional:
+    - accordion
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
+
+freeformKeywords:
+  - faq
+  - frequently asked questions
+  - accordion
+  - expandable
+  - collapse
+  - toggle
+
+fontFamily:
+  - system-ui
+
+createdAt: "2025-01-21T00:00:00Z"
+status: stable
+language: ko
+draft: false

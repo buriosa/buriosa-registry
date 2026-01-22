@@ -26,8 +26,14 @@ Thumbs.db
 
 # claude
 .claude/
+CLAUDE.md
+buriosa-mvp-spec.md
+TASKS.md
 
-# generated
+# generated registry files
+public/generated/*
+!public/generated/.gitkeep
+!public/generated/README.md
 public/registry/index.json
 
 .venv/
@@ -35,3 +41,7 @@ __pycache__/
 *.pyc
 .env
 .env.*
+
+# docs
+.docs/
+prompts.md

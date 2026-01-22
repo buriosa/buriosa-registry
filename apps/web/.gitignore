@@ -40,5 +40,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/public/registry/index.json
+# Old registry structure (deprecated)
+# /public/registry/index.json
+
+# Components are now referenced from root via @registry/* alias
 /components/registry/

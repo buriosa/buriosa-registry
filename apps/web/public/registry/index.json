@@ -1,24 +1,340 @@
 [
   {
-    "schemaVersion": "",
+    "schemaVersion": "2.0",
+    "name": "buriosa-cta-01",
+    "category": "cta",
+    "images": {
+      "preview": "registry/preview/buriosa-cta-01.png"
+    },
+    "description": {
+      "short": "중앙 정렬 CTA 섹션 - 그라데이션 배경, 글로우 효과, 2개 버튼 (Primary/Secondary)"
+    },
+    "createdAt": "2025-01-21T00:00:00Z",
+    "status": "stable",
+    "language": "ko",
+    "freeformKeywords": [
+      "call to action",
+      "get started",
+      "sign up",
+      "gradient background",
+      "glow effect",
+      "dual buttons",
+      "conversion"
+    ],
+    "fontFamily": [
+      "system-ui"
+    ],
+    "tags": {
+      "functional": [
+        "hover-effect",
+        "animation"
+      ],
+      "style": [
+        "dark-theme",
+        "modern",
+        "glow",
+        "gradient",
+        "bold",
+        "sans-serif"
+      ],
+      "layout": [
+        "centered",
+        "full-width",
+        "responsive"
+      ],
+      "industry": [
+        "saas",
+        "startup",
+        "enterprise"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "2.0",
+    "name": "buriosa-faq-01",
+    "category": "faq",
+    "images": {
+      "preview": "registry/preview/buriosa-faq-01.png"
+    },
+    "description": {
+      "short": "아코디언 형태의 FAQ 섹션 - 클릭 시 열림/닫힘 애니메이션, +/- 아이콘"
+    },
+    "createdAt": "2025-01-21T00:00:00Z",
+    "status": "stable",
+    "language": "ko",
+    "freeformKeywords": [
+      "faq",
+      "frequently asked questions",
+      "accordion",
+      "expandable",
+      "collapse",
+      "toggle"
+    ],
+    "fontFamily": [
+      "system-ui"
+    ],
+    "tags": {
+      "functional": [
+        "accordion",
+        "animation",
+        "hover-effect"
+      ],
+      "style": [
+        "dark-theme",
+        "modern",
+        "minimal",
+        "sans-serif"
+      ],
+      "layout": [
+        "single-column",
+        "centered",
+        "responsive"
+      ],
+      "industry": [
+        "saas",
+        "startup",
+        "enterprise"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "2.0",
+    "name": "buriosa-feature-01",
+    "category": "feature-showcase",
+    "images": {
+      "preview": "registry/preview/buriosa-feature-01.png"
+    },
+    "description": {
+      "short": "3열 그리드 레이아웃의 서비스 특징 소개 섹션 - Log Commit, Heatmap, Weekly Review"
+    },
+    "createdAt": "2025-01-21T00:00:00Z",
+    "status": "stable",
+    "language": "ko",
+    "freeformKeywords": [
+      "feature grid",
+      "icon cards",
+      "log commit",
+      "heatmap",
+      "weekly review",
+      "github style",
+      "productivity tools"
+    ],
+    "fontFamily": [
+      "system-ui"
+    ],
+    "tags": {
+      "functional": [
+        "hover-effect",
+        "animation"
+      ],
+      "style": [
+        "dark-theme",
+        "modern",
+        "glow",
+        "gradient",
+        "sans-serif"
+      ],
+      "layout": [
+        "three-column",
+        "centered",
+        "card-grid",
+        "responsive"
+      ],
+      "industry": [
+        "saas",
+        "startup",
+        "personal"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "2.0",
+    "name": "buriosa-footer-01",
+    "category": "footer",
+    "images": {
+      "preview": "registry/preview/buriosa-footer-01.png"
+    },
+    "description": {
+      "short": "4열 레이아웃 푸터 - 로고, 링크 그룹, 소셜 아이콘, 뉴스레터 구독 폼"
+    },
+    "createdAt": "2025-01-21T00:00:00Z",
+    "status": "stable",
+    "language": "ko",
+    "freeformKeywords": [
+      "footer",
+      "navigation",
+      "social links",
+      "newsletter",
+      "copyright",
+      "sitemap"
+    ],
+    "fontFamily": [
+      "system-ui"
+    ],
+    "tags": {
+      "functional": [
+        "newsletter",
+        "hover-effect"
+      ],
+      "style": [
+        "dark-theme",
+        "modern",
+        "minimal",
+        "sans-serif"
+      ],
+      "layout": [
+        "four-column",
+        "full-width",
+        "responsive"
+      ],
+      "industry": [
+        "saas",
+        "startup",
+        "enterprise"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "2.0",
+    "name": "buriosa-pricing-01",
+    "category": "pricing",
+    "images": {
+      "preview": "registry/preview/buriosa-pricing-01.png"
+    },
+    "description": {
+      "short": "모던한 3단계 가격표 (Free, Pro, Enterprise) - 다크 테마 및 호버 효과"
+    },
+    "createdAt": "2025-01-21T00:00:00Z",
+    "status": "stable",
+    "language": "ko",
+    "freeformKeywords": [
+      "pricing table",
+      "subscription",
+      "tier",
+      "popular badge",
+      "call to action"
+    ],
+    "fontFamily": [
+      "system-ui"
+    ],
+    "tags": {
+      "functional": [
+        "hover-effect",
+        "animation"
+      ],
+      "style": [
+        "dark-theme",
+        "modern",
+        "glow",
+        "gradient",
+        "sans-serif"
+      ],
+      "layout": [
+        "three-column",
+        "centered",
+        "card-grid",
+        "responsive"
+      ],
+      "industry": [
+        "saas",
+        "startup",
+        "enterprise"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "2.0",
+    "name": "buriosa-testimonial-01",
+    "category": "testimonial",
+    "images": {
+      "preview": "registry/preview/buriosa-testimonial-01.png"
+    },
+    "description": {
+      "short": "3열 그리드 후기 카드 - 아바타, 이름, 직함, 인용문, 별점 포함"
+    },
+    "createdAt": "2025-01-21T00:00:00Z",
+    "status": "stable",
+    "language": "ko",
+    "freeformKeywords": [
+      "testimonial",
+      "review",
+      "social proof",
+      "customer feedback",
+      "rating",
+      "avatar",
+      "quote"
+    ],
+    "fontFamily": [
+      "system-ui"
+    ],
+    "tags": {
+      "functional": [
+        "hover-effect",
+        "animation"
+      ],
+      "style": [
+        "dark-theme",
+        "modern",
+        "gradient",
+        "sans-serif"
+      ],
+      "layout": [
+        "three-column",
+        "card-grid",
+        "responsive"
+      ],
+      "industry": [
+        "saas",
+        "startup",
+        "enterprise"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "2.0",
     "name": "sample-hero",
     "category": "hero",
     "images": {
-      "preview": "public/registry/preview/sample-hero.png"
+      "preview": "registry/preview/sample-hero.png"
     },
     "description": {
-      "short": "기본 Hero 섹션 샘플. 제목/설명/CTA를 포함한 가장 단순한 시작점.",
-      "long": "레지스트리의 첫 컴포넌트 예시입니다.\n- 목적: 랜딩 상단 Hero UI의 최소 구성 제공\n- 사용처: MVP 랜딩(/mvp)에서 빠르게 재사용 가능\n- 확장: 버튼 2개, 배경 이미지, 배지/태그, 레이아웃 옵션 등\n"
+      "short": "GitHub 스타일 워크스페이스를 위한 다크 테마 히어로 섹션",
+      "detailed": "레지스트리의 첫 컴포넌트 예시입니다.\n- 목적: 랜딩 상단 Hero UI의 최소 구성 제공\n- 사용처: MVP 랜딩(/mvp)에서 빠르게 재사용 가능\n- 확장: 버튼 2개, 배경 이미지, 배지/태그, 레이아웃 옵션 등\n"
     },
-    "createdAt": null,
-    "status": "draft",
-    "language": null,
-    "freeformKeywords": [],
-    "fontFamily": [],
-    "tags": [
-      "landing",
-      "hero",
-      "cta"
-    ]
+    "createdAt": "2025-01-20T00:00:00Z",
+    "status": "stable",
+    "language": "ko",
+    "freeformKeywords": [
+      "github",
+      "workspace",
+      "log commit",
+      "heatmap",
+      "weekly review"
+    ],
+    "fontFamily": [
+      "system-ui"
+    ],
+    "tags": {
+      "functional": [
+        "lead-capture",
+        "hover-effect"
+      ],
+      "style": [
+        "dark-theme",
+        "modern",
+        "glow",
+        "sans-serif"
+      ],
+      "layout": [
+        "centered",
+        "full-width",
+        "responsive"
+      ],
+      "industry": [
+        "saas",
+        "startup",
+        "personal"
+      ]
+    }
   }
 ]

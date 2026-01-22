@@ -1,58 +1,18 @@
-import { loadRegistryIndex } from "../lib/registry";
+import Link from "next/link";
 
-export default async function Page() {
-  const items = await loadRegistryIndex();
-
+export default function Home() {
   return (
-    <main style={{ maxWidth: 980, margin: "0 auto", padding: 24 }}>
-      <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 8 }}>
-        BURIOSA Registry
-      </h1>
-      <p style={{ opacity: 0.8, marginBottom: 20 }}>
-        “공장”이 만든 index.json을 “쇼룸”에서 읽어 목록을 보여줍니다.
+    <main className="flex min-h-screen flex-col items-center justify-center p-8">
+      <h1 className="text-4xl font-bold mb-4">BURIOSA</h1>
+      <p className="text-(--muted) mb-8">
+        기록을 자산으로 바꾸는 워크스페이스
       </p>
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-          gap: 16,
-        }}
+      <Link
+        href="/dashboard"
+        className="px-6 py-3 bg-(--accent) text-(--accent-foreground) rounded-lg font-medium hover:opacity-90 transition-opacity"
       >
-        {items.map((item) => (
-          <a
-            key={item.name}
-            href={`/registry/${item.name}`}
-            style={{
-              border: "1px solid rgba(0,0,0,0.12)",
-              borderRadius: 12,
-              padding: 16,
-              textDecoration: "none",
-              color: "inherit",
-              background: "white",
-            }}
-          >
-            <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 6 }}>
-              {item.category} · {item.status}
-            </div>
-            <div style={{ fontSize: 18, fontWeight: 650, marginBottom: 8 }}>
-              {item.name}
-            </div>
-            <div style={{ fontSize: 14, opacity: 0.85, lineHeight: 1.4 }}>
-              {item.description?.short ?? "No description yet."}
-            </div>
-            <div style={{ fontSize: 12, opacity: 0.65, marginTop: 12 }}>
-              createdAt: {item.createdAt}
-            </div>
-          </a>
-        ))}
-      </div>
-
-      {items.length === 0 && (
-        <p style={{ marginTop: 18, opacity: 0.7 }}>
-          items가 0개입니다. (registry-build.py 출력 구조 확인 필요)
-        </p>
-      )}
+        시작하기
+      </Link>
     </main>
   );
 }

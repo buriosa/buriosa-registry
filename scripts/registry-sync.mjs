@@ -88,9 +88,9 @@ async function main() {
     await ensureDir(previewDestDir);
   }
 
-  // 3) 컴포넌트 배송 (SKIP - tsconfig paths로 직접 참조)
-  // const componentsDestDir = path.join(root, "apps", "web", "components", "registry");
-  // @registry/* alias를 통해 src/components/registry를 직접 참조하므로 복사 불필요
+  // 3) 컴포넌트 배송 (apps/web에서 직접 참조)
+  const componentsDestDir = path.join(root, "apps", "web", "components", "registry");
+  await copyDir(componentsSrcDir, componentsDestDir);
 
   // 4) registry-components.ts 자동 생성(수동 매핑 제거)
   const entries = await fs.readdir(componentsSrcDir, { withFileTypes: true });
@@ -113,8 +113,8 @@ async function main() {
   console.log(`[SYNC OK] index.json + preview + registry-components.ts`);
   console.log(`- ${path.relative(root, indexDest)}`);
   console.log(`- ${path.relative(root, previewDestDir)}`);
+  console.log(`- ${path.relative(root, componentsDestDir)}`);
   console.log(`- ${path.relative(root, registryMapFile)}`);
-  console.log(`\nNote: Components are referenced directly from src/ via @registry/* alias`);
 }
 
 main().catch((e) => {
