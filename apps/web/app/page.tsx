@@ -8,10 +8,10 @@ export default function Home() {
         기록을 자산으로 바꾸는 워크스페이스
       </p>
       <Link
-        href="/dashboard"
+        href="/registry"
         className="px-6 py-3 bg-(--accent) text-(--accent-foreground) rounded-lg font-medium hover:opacity-90 transition-opacity"
       >
-        시작하기
+        레지스트리 보기
       </Link>
     </main>
   );
